@@ -1,0 +1,12 @@
+@use "../global" as *;
+
+.l-footer {
+  text-align: center;
+  margin-top: 185px;
+  @include sp {
+    margin-top: 142px;
+  }
+  p {
+    @include f_style(10, regular, 15, 0);
+  }
+}

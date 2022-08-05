@@ -1,0 +1,12 @@
+@use "../global" as *;
+
+.margin80 {
+  margin-top: 80px;
+}
+
+.u-margin-under {
+  margin: 92px 9px 0 0px !important;
+  @include sp {
+    margin: 40px 9px 0 10px !important;
+  }
+}
