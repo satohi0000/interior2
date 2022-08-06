@@ -8,7 +8,7 @@ body {
     color: $black;
   }
   h1 {
-    @include f_style(22.5, bold, 26, 0);
+    @include f_style(20, bold, 26, 0);
     color: $black;
     font-weight: $font-family1;
   }

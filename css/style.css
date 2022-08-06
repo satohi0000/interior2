@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   background-color: #fff;
   color: #333333;
@@ -8,9 +7,9 @@ body a {
   color: #333333;
 }
 body h1 {
-  font-size: 22.5px;
+  font-size: 20px;
   font-weight: bold;
-  line-height: 1.1555555556;
+  line-height: 1.3;
   letter-spacing: 0em;
   color: #333333;
   font-weight: Arial;
@@ -231,33 +230,20 @@ select {
 }
 
 .l-header {
-  background-image: url(../画像/img/mainvisual.jpg);
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 562px;
-  position: relative;
+  height: 90px;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px 40px;
 }
-@media (max-width: 599px) {
-  .l-header {
-    height: 600px;
-  }
+.l-header li {
+  padding-bottom: 10px;
 }
-.l-header h1 {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  top: 193px;
-  font-family: Meiryo, sans-serif;
-}
-@media (max-width: 599px) {
-  .l-header h1 {
-    font-size: 84.5px;
-    font-weight: bold;
-    line-height: 1.1479289941;
-    letter-spacing: 0em;
-    top: 250px;
-  }
+.l-header a {
+  color: #fff;
+  font-size: 15px;
+  padding-bottom: 10px;
 }
 
 .p-article {
@@ -472,6 +458,40 @@ select {
   margin-top: 11px;
 }
 
+.p-mask {
+  display: none;
+}
+
+.open1 {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 1;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.p-nav {
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  color: #fff;
+  padding: 50px 55px;
+  transition: all 0.5s;
+  z-index: 20;
+  opacity: 0;
+}
+
+.open {
+  left: 0;
+  opacity: 1;
+}
+
 .c-list {
   position: absolute;
   width: 100%;
@@ -490,6 +510,41 @@ select {
 }
 .c-list__menu li {
   margin-right: 27px;
+}
+
+.c-ham-btn {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 45px;
+  z-index: 98;
+  cursor: pointer;
+}
+.c-ham-btn span {
+  position: absolute;
+  left: 7px;
+  width: 36px;
+  height: 3px;
+  transition: all 0.4s;
+  background-color: #000;
+}
+.c-ham-btn span:nth-of-type(1) {
+  top: 8px;
+}
+.c-ham-btn span:nth-of-type(2) {
+  top: 17px;
+}
+
+#c-BTN1.active {
+  transform: rotate(360deg);
+  transition: all 0.5s;
+}
+#c-BTN1.active span:nth-of-type(1) {
+  transform: translateY(15px) rotate(-45deg);
+}
+#c-BTN1.active span:nth-of-type(2) {
+  top: 38px;
+  transform: translateY(-15px) rotate(45deg);
 }
 
 .c-map {
