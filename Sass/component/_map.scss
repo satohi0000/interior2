@@ -1,11 +1,1 @@
 @use "../global" as *;
-
-.c-map {
-  margin: 65px 0 0 12%;
-  width: 76% !important;
-  height: 400px;
-  @include sp {
-    margin: 25px 0 0 5%;
-    width: 90% !important;
-  }
-}

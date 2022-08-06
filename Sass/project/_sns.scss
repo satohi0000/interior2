@@ -1,0 +1,11 @@
+.p-sns {
+  display: flex;
+  p {
+    &:nth-child(2) {
+      margin-left: 25px;
+    }
+    &:nth-child(3) {
+      margin-left: 20px;
+    }
+  }
+}
