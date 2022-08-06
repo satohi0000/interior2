@@ -5,10 +5,18 @@
   margin: 0 auto;
   &__pictures {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 43px;
+    @include size {
+      margin-bottom: 38px;
+    }
     li {
       width: 23%;
+      @include size {
+        width: 48%;
+        margin: 10px 0 12px 0;
+      }
     }
     img {
       width: 100%;

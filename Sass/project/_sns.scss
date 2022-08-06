@@ -1,5 +1,11 @@
+@use "../global" as *;
+
 .p-sns {
   display: flex;
+  @include size {
+    margin-top: 45px;
+    margin-left: 39px;
+  }
   p {
     &:nth-child(2) {
       margin-left: 25px;

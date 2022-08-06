@@ -6,4 +6,12 @@
   margin: 0 auto;
   margin-top: 55px;
   justify-content: space-between;
+  @include size {
+    flex-direction: column;
+    justify-content: baseline;
+  }
+  > p {
+    margin-top: 5px;
+    margin-left: 42px;
+  }
 }
