@@ -3,8 +3,11 @@
 .p-sns {
   display: flex;
   @include size {
-    margin-top: 45px;
+    margin-top: 46px;
     margin-left: 39px;
+  }
+  @include sp {
+    margin-left: 0px;
   }
   p {
     &:nth-child(2) {
