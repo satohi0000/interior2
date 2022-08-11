@@ -4,10 +4,13 @@
   width: 100%;
   margin: 0 auto;
   p {
-    padding-top: 4px;
+    padding-top: 3px;
   }
   &__products-top {
     margin: 28px 0;
+    @include size {
+      margin: 46px 0 34px 0;
+    }
   }
 
   &__pictures {
@@ -15,13 +18,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
     @include size {
-      margin-bottom: 38px;
+      margin-bottom: 23px;
     }
     li {
       width: 23%;
       @include size {
         width: 48%;
-        margin: 10px 0 12px 0;
+        margin: 0px 0 18px 0;
       }
     }
     img {

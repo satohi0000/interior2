@@ -2,6 +2,9 @@
 
 .margin125 {
   margin-top: 125px;
+  @include size {
+    margin-top: 60px;
+  }
 }
 
 .u-margin-under {
