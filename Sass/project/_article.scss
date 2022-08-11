@@ -3,6 +3,12 @@
 .p-article {
   width: 100%;
   margin: 0 auto;
+  p {
+    padding-top: 4px;
+  }
+  &__products-top {
+    margin: 28px 0;
+  }
 
   &__pictures {
     display: flex;
@@ -21,15 +27,8 @@
     img {
       width: 100%;
     }
-    &-1,
-    &-2,
-    &-3,
-    &-4,
-    &-5,
-    &-6,
-    &-7,
-    &-8 {
-      margin-bottom: 42px;
+    &-1 {
+      margin-bottom: 39px;
     }
   }
   h3 {
