@@ -1,0 +1,8 @@
+@use "../global" as *;
+
+.f-wrapper {
+  width: 100%;
+  max-width: $inner1;
+  margin: 0 auto;
+  padding: 0 40px;
+}

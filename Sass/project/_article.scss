@@ -3,11 +3,11 @@
 .p-article {
   width: 100%;
   margin: 0 auto;
+
   &__pictures {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 43px;
     @include size {
       margin-bottom: 38px;
     }
@@ -20,6 +20,16 @@
     }
     img {
       width: 100%;
+    }
+    &-1,
+    &-2,
+    &-3,
+    &-4,
+    &-5,
+    &-6,
+    &-7,
+    &-8 {
+      margin-bottom: 42px;
     }
   }
   h3 {
