@@ -2,7 +2,7 @@
 
 .l-header {
   height: 60px;
-  @include sp {
+  @include size {
     height: 80px;
   }
   background-color: #fff;

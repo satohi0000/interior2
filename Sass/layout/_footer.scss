@@ -14,7 +14,7 @@
   > p {
     margin-top: 5px;
     margin-left: 42px;
-    @include sp {
+    @include size {
       margin-top: 5px;
       margin-left: 0px;
     }

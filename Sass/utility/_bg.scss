@@ -2,7 +2,7 @@
 
 .bg-fixed {
   height: 300px;
-  @include sp {
+  @include size {
     height: 95px;
   }
   background-attachment: fixed;
