@@ -18,6 +18,7 @@ body {
     font-weight: $font-family2;
   }
   p,
+  h4,
   dt,
   dd {
     @include f_style(12, bold, 18, 0);

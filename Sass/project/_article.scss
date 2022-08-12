@@ -1,6 +1,24 @@
 @use "../global" as *;
 
 .p-article {
+  &__about {
+    max-width: $inner2;
+    margin-top: 31px;
+    margin-bottom: 464px;
+    @include size {
+      margin-top: 50px;
+      margin-bottom: 182px;
+    }
+    &-sec {
+      @include f_style(14, regular, 26, 10);
+      width: 74%;
+      margin-bottom: 25px;
+      @include size {
+        width: 100%;
+        @include f_style(14, regular, 26, 40);
+      }
+    }
+  }
   &__2ca {
     display: flex;
     max-width: $inner2;
@@ -81,7 +99,7 @@
   &__products-top {
     margin: 28px 0;
     @include size {
-      margin: 46px 0 34px 0;
+      margin: 46px 0 30px 0;
     }
   }
 
