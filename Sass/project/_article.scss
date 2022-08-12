@@ -4,8 +4,14 @@
   &__2ca {
     display: flex;
     max-width: $inner2;
+    @include size {
+      flex-direction: column;
+    }
     &-left {
       width: 50%;
+      @include size {
+        width: 100%;
+      }
       img {
         width: 100%;
         padding-right: 20px;
@@ -14,18 +20,29 @@
     &-right {
       width: 42%;
       padding-left: 63px;
+      @include size {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 23px;
+      }
       section {
         @include f_style(14, regular, 21, 15);
         font-family: $font-family2;
+        @include size {
+          font-size: 13.5px;
+        }
       }
       > :nth-child(1) {
         margin-top: 3px;
       }
       > :nth-child(2) {
         margin-top: 30px;
+        @include size {
+          margin-top: 34px;
+        }
       }
       > :nth-child(3) {
-        margin-top: 28px;
+        margin-top: 30px;
       }
       dl {
         display: flex;
@@ -34,14 +51,24 @@
         flex-wrap: wrap;
         dt {
           width: 30%;
+          @include size {
+            width: 35%;
+          }
         }
         dd {
           width: 70%;
+          @include size {
+            width: 65%;
+          }
         }
       }
       &-c {
         margin-top: 85px;
         margin-left: 26px;
+        @include size {
+          margin-top: 58px;
+          margin-left: 18px;
+        }
         text-align: center;
       }
     }
