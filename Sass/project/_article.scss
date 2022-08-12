@@ -1,6 +1,51 @@
 @use "../global" as *;
 
 .p-article {
+  &__2ca {
+    display: flex;
+    max-width: $inner2;
+    &-left {
+      width: 50%;
+      img {
+        width: 100%;
+        padding-right: 20px;
+      }
+    }
+    &-right {
+      width: 42%;
+      padding-left: 63px;
+      section {
+        @include f_style(14, regular, 21, 15);
+        font-family: $font-family2;
+      }
+      > :nth-child(1) {
+        margin-top: 3px;
+      }
+      > :nth-child(2) {
+        margin-top: 30px;
+      }
+      > :nth-child(3) {
+        margin-top: 28px;
+      }
+      dl {
+        display: flex;
+        margin-top: 30px;
+        width: 100%;
+        flex-wrap: wrap;
+        dt {
+          width: 30%;
+        }
+        dd {
+          width: 70%;
+        }
+      }
+      &-c {
+        margin-top: 85px;
+        margin-left: 26px;
+        text-align: center;
+      }
+    }
+  }
   width: 100%;
   margin: 0 auto;
   p {

@@ -17,7 +17,9 @@ body {
     color: $black;
     font-weight: $font-family2;
   }
-  p {
+  p,
+  dt,
+  dd {
     @include f_style(12, bold, 18, 0);
     color: $black;
     font-weight: $font-family2;

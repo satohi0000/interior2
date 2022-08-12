@@ -1,15 +1,8 @@
 @use "../global" as *;
 
 .margin125 {
-  margin-top: 125px;
+  margin-top: 122px;
   @include size {
     margin-top: 60px;
-  }
-}
-
-.u-margin-under {
-  margin: 92px 9px 0 0px !important;
-  @include size {
-    margin: 40px 9px 0 10px !important;
   }
 }

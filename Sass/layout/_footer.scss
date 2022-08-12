@@ -12,8 +12,9 @@
     justify-content: baseline;
   }
   > p {
-    margin-top: 5px;
+    margin-top: 0px;
     margin-left: 42px;
+    text-align: end;
     @include size {
       margin-top: 5px;
       margin-left: 0px;
