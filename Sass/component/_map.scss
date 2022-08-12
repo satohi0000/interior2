@@ -4,4 +4,10 @@
   width: 75% !important;
   height: 300px;
   margin-bottom: 45px;
+  @include size {
+    width: 100% !important;
+    padding: 10px 0px 0 3px;
+    border-bottom: none;
+    margin-bottom: 26px;
+  }
 }

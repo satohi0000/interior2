@@ -3,22 +3,37 @@
 .p-article {
   &__company {
     max-width: $inner2;
+    @include size {
+      margin-top: 50px;
+    }
     dl {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       margin-bottom: 12px;
+      @include size {
+        flex-direction: column;
+      }
     }
     dt {
       width: 20%;
       border-bottom: solid 1px #dcdbdb;
       padding: 20px 10px;
+      @include size {
+        width: 100%;
+        padding: 22px 0px 0 0px;
+        border-bottom: none;
+      }
     }
     dd {
       @include f_style(14, regular, 21, 0);
       width: 60%;
       border-bottom: solid 1px #dcdbdb;
       padding: 20px 10px;
+      @include size {
+        width: 100%;
+        padding: 12px 0px 18px 0px;
+      }
     }
   }
   &__about {
