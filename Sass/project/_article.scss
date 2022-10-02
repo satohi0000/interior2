@@ -1,6 +1,9 @@
 @use "../global" as *;
 
 .p-article {
+  h3 {
+    margin-top: 50px;
+  }
   &__company {
     max-width: $inner2;
     @include size {
