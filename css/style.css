@@ -300,6 +300,9 @@ select {
     flex-direction: column;
   }
 }
+.p-article h3{
+  margintop:20px;
+}
 .p-article__company dt {
   width: 20%;
   border-bottom: solid 1px #dcdbdb;
