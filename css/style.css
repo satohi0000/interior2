@@ -281,6 +281,9 @@ select {
   width: 100%;
   margin: 0 auto;
 }
+.p-article h3 {
+  margin-top: 50px;
+}
 .p-article__company {
   max-width: 800px;
 }
